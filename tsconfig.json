@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-      "outDir": "dist/js",
-      "target": "ESNext" 
+    "outDir": "dist/js",
+    "target": "ESNext",
+    "noEmitOnError": true
   },
   "include": ["app/**/*"]
 }
