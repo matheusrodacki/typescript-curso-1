@@ -6,7 +6,7 @@ export class Negociacoes {
   adiciona(negociacao: Negociacao): void {
     this.negociacoes.push(negociacao);
   }
-  lista(): ReadonlyArray<Negociacao> {
+  lista(): readonly Negociacao[] {
     return this.negociacoes;
   }
 }
