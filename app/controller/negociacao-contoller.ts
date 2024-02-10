@@ -2,7 +2,6 @@ import { Negociacao } from '../models/negociacao.js';
 import { Negociacoes } from '../models/negociacoes.js';
 import { MensagemView } from '../view/mensagem-view.js';
 import { NegocicoesView } from '../view/negociacoes-view.js';
-import { View } from '../view/view.js';
 
 export class NegociacaoController {
   private inputData: HTMLInputElement;
