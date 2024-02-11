@@ -16,6 +16,7 @@ export class NegociacaoController {
 
   @domInjector('#data')
   private inputValor: HTMLInputElement;
+
   private negociacoes = new Negociacoes();
   private negociacoesView = new NegocicoesView('#negociacoesView');
   private mensagemView = new MensagemView('#mensagemView');
