@@ -3,11 +3,25 @@ export abstract class View<T> {
   private escapar = false;
 
   constructor(seletor: string, escapar?: boolean) {
-    this.elemento = document.querySelector(seletor);
+    const elemento = document.querySelector(seletor);
+    if (elemento) {
+      this.elemento = elemento as HTMLElement;
+    } else {
+      throw Error('Seletor não existe no doom!');
+    }
+
     if (escapar) {
       this.escapar = escapar;
     }
   }
+
+  /*
+    muito top zé
+
+
+  */
+
+  //mas que caralha
 
   public update(model: T): void {
     let template = this.template(model);
