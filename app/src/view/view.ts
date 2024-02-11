@@ -12,8 +12,7 @@ export abstract class View<T> {
       throw Error('Seletor não existe no doom!');
     }
   }
-  @logarTempoDeExecucao(true)
-  @inspect
+
   public update(model: T): void {
     let template = this.template(model);
 
